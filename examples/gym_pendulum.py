@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.DEBUG,
                     datefmt='%m-%d %H:%M:%S')
 
 if __name__ == "__main__":
-    ENV_NAME = "Pendulum-v0"
+    ENV_NAME = "Pendulum-v1"
     TIMESTEPS = 10  # T
     N_BATCH = 1
     LQR_ITER = 5
