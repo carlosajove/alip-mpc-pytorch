@@ -272,7 +272,7 @@ class ALIP_mpc_torch_LinDx():
             ax[row,col].legend()
 
         fig.suptitle(f'with starting leg {self.initial_stance_leg}') 
-        plt.savefig('alip_mpc_pytorch_sol')
+        plt.savefig('figures/alip_mpc_pytorch_sol')
 
         fig, ax = plt.subplots(n_row, n_col, figsize=(20,20), sharex = True, sharey = True)
         Lx_plus = 0.5*self.mass*self.zH*self.l*self.w*torch.sqrt(self.l*self.Ts*0.5) + self.Lx_offset
@@ -294,7 +294,7 @@ class ALIP_mpc_torch_LinDx():
 
 
         fig.suptitle(f'Ly_des = {self.Ly_des}; Lx = ')
-        plt.savefig('alip_mpc_pytorch_angular')
+        plt.savefig('figures/alip_mpc_pytorch_angular')
 
 
 

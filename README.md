@@ -1,24 +1,12 @@
-# mpc.pytorch • [![Build Status][travis-image]][travis] [![PyPi][pypi-image]][pypi] [![License][license-image]][license]
+# ALIP-MPC in PyTorch
 
-[travis-image]: https://travis-ci.org/locuslab/mpc.pytorch.png?branch=master
-[travis]: http://travis-ci.org/locuslab/mpc.pytorch
+Batched, differentiable footstep MPC for bipedal walking, based on the
+**Angular-momentum Linear Inverted Pendulum (ALIP)** model. Later integrated into
+[VecPyPnC](https://github.com/carlosajove/VecPyPnC).
 
-[pypi-image]: https://img.shields.io/pypi/v/mpc.svg
-[pypi]: https://pypi.python.org/pypi/mpc
+![ALIP MPC solution](alip/figures/alip_mpc_pytorch.png)
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
-[license]: LICENSE
+The ALIP code is in [`alip/`](alip): the model (`ALIP_model.py`) and two MPC formulations
+(`ALIP_mpc_pytorch.py`, `ALIP_mpc_pytorch_withLinDx.py`).
 
-*A fast and differentiable model predictive control solver for PyTorch.
-Crafted by <a href="https://bamos.github.io">Brandon Amos</a>,
-Ivan Jimenez,
-Jacob Sacks,
-<a href='https://www.cc.gatech.edu/~bboots3/'>Byron Boots</a>,
-and
-<a href="https://zicokolter.com">J. Zico Kolter</a>.*
-
----
-
-+ [More details are available on our project website here](http://locuslab.github.io/mpc.pytorch)
-+ This is still an early alpha release, be prepared for some rough
-  spots and get in touch if you have any questions!
+Built on [mpc.pytorch](https://github.com/locuslab/mpc.pytorch) (Amos et al., 2018, MIT license).
